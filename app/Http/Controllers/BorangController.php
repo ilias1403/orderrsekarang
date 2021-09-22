@@ -27,6 +27,12 @@ class BorangController extends Controller
         return view('borang/index', compact('borang'));
     }
 
+    public function index_2(Request $request)
+    {
+        $data['phone'] = $request->phone_number;
+        return $this->url($data['phone']);
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -195,7 +201,7 @@ class BorangController extends Controller
 
         $phone = '0135224660';
 
-        if(in_array($os,array('Android','iPhone','Blackberry','Mobile'))) 
+        if(in_array($os,array('Android','iPhone','Blackberry','Mobile')))
         {
 
             $url="whatsapp://send?text=$text_2&phone=+6$phone";

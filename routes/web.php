@@ -22,6 +22,8 @@ Route::get('muka_depan', [App\Http\Controllers\BorangController::class, 'index']
 
 Route::get('borang_pesanan', [App\Http\Controllers\BorangController::class, 'borang'])->name('borang');
 
+Route::post('rumah', [App\Http\Controllers\BorangController::class, 'index_2'])->name('index_2');
+
 Route::get('{code}', [App\Http\Controllers\BorangController::class, 'url'])->name('url');
 
 Route::post('send_borang', [App\Http\Controllers\BorangController::class, 'send_borang'])->name('send_borang');
