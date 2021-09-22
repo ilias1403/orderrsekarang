@@ -20,6 +20,7 @@ class CreateCustomerTable extends Migration
             $table->text('address_1')->nullable();
             $table->text('postcode')->nullable();
             $table->text('city')->nullable();
+            $table->text('state')->nullable();
             $table->text('country')->nullable();
             $table->timestamps();
         });

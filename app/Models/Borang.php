@@ -13,6 +13,6 @@ class Borang extends Model
 
     protected $fillable = 
     [
-        'name', 'phone_number','address','postcode','city','country'
+        'name', 'phone_number','address','postcode','city','state','country'
     ];
 }
