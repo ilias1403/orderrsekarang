@@ -24,7 +24,7 @@ Route::get('borang_pesanan', [App\Http\Controllers\BorangController::class, 'bor
 
 Route::get('{code}', [App\Http\Controllers\BorangController::class, 'url'])->name('url');
 
+Route::post('send_borang', [App\Http\Controllers\BorangController::class, 'send_borang'])->name('send_borang');
 
 
 
-// Route::get('{code}', 'BorangController@shortenLink')->name('shorten.link');
